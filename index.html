@@ -1,12 +1,28 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
-        <title>Add to Cart</title>
-        <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mobile App</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="dist/output.css">
     </head>
-    <body>
-        <input type="text" id="input-field" placeholder="Bread">
-        <button id="add-button">Add to cart</button>
-        <script src="index.js"></script>
+    
+    <body class="bg-gray-100 text-brown-900 font-rubik flex items-center justify-center min-h-screen">
+        <div class="container max-w-sm mx-auto p-6 bg-white shadow-md rounded-lg">
+            <img src="img/cat.png" alt="Shopping Cart" class="w-24 mx-auto">
+            <input type="text" id="input-field" placeholder="Enter item" 
+            class="mt-4 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brown-600">
+            <button id="add-button" class="mt-4 w-full bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-brown-900">
+                Add to Cart
+            </button>
+            <ul id="shopping-list" class="mt-6 space-y-2">Apples, Oranges,Bread, Reddish,Biscuits,Soap,Eggs,Chips,Sweets,Chocolates</ul>
+        </div>
+        
+        <!-- JavaScript -->
+        <script src="index.js" type="module"></script>
     </body>
 </html>
