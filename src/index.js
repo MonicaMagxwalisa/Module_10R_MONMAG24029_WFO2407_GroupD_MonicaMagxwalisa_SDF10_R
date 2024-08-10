@@ -58,7 +58,7 @@ function appendItemToShoppingListEl(item) {
     
     let newEl = document.createElement("li");
     newEl.textContent = itemValue;
-    newEl.classList.add("bg-white", "px-4", "py-2", "rounded-lg", "shadow-sm", "hover:bg-yellow-100", "cursor-pointer");
+    newEl.classList.add("bg-gray-200", "px-4", "py-2", "rounded-lg", "shadow-sm", "hover:bg-gray-300", "cursor-pointer", "border", "border-gray-300", "text-center");
 
     // Remove item on click
     newEl.addEventListener("click", function() {
@@ -68,3 +68,5 @@ function appendItemToShoppingListEl(item) {
     
     shoppingListEl.append(newEl);
 }
+
+
