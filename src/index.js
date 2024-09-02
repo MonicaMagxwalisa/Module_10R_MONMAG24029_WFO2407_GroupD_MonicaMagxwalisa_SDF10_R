@@ -68,5 +68,3 @@ function appendItemToShoppingListEl(item) {
     
     shoppingListEl.append(newEl);
 }
-
-
